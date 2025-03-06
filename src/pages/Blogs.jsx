@@ -5,7 +5,7 @@ const Blogs = () => {
 
   const fetchBlogs = async () => {
     try {
-      const response = await fetch("http://localhost:8070/blogs");
+      const response = await fetch("https://blogappbackend-qqg5.onrender.com/blogs");
       const data = await response.json();
       setBlogs(data);
     } catch (error) {

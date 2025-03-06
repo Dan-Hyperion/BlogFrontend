@@ -5,7 +5,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:8070/");
+      const response = await fetch("https://blogappbackend-qqg5.onrender.com/");
       const data = await response.json();
       setMessage(data.message)
       console.log(data)
